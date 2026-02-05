@@ -24,7 +24,6 @@ body{
 }
 
 .centrado{ text-align:center; }
-
 .espacio{ height:40px; }
 
 .titulo{
@@ -46,6 +45,7 @@ body{
   vertical-align:middle;
 }
 
+/* --- Consorcio: grilla equilibrada --- */
 .logos-grid{
   max-width:500px;
   margin:30px auto;
@@ -56,8 +56,21 @@ body{
   align-items:center;
 }
 
-.logos-grid img{ height:60px; }
+.logos-grid div{
+  width:120px;
+  height:80px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 
+.logos-grid img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}
+
+/* --- Micro detalles --- */
 .micro-linea{
   width:60px;
   height:2px;
@@ -76,6 +89,12 @@ body{
   line-height:26px;
   text-align:center;
   margin-right:8px;
+}
+
+/* --- FIX números duplicados --- */
+ol{
+  list-style:none;
+  padding-left:0;
 }
 
 hr{
@@ -129,10 +148,10 @@ hr{
     </em></p>
 
     <div class="logos-grid">
-      <img src="css/images/bbglobal.png">
-      <img src="css/images/proalt.png">
-      <img src="css/images/algenex.png">
-      <img src="css/images/farmalan.png">
+      <div><img src="css/images/bbglobal.png"></div>
+      <div><img src="css/images/proalt.png"></div>
+      <div><img src="css/images/algenex.png"></div>
+      <div><img src="css/images/farmalan.png"></div>
     </div>
 
   </div>
@@ -142,7 +161,7 @@ hr{
   <h3>Objetivos</h3>
 
   <p>
-    <strong>El objetivo principal</strong> del proyecto es desarrollar una vacuna de subunidades DIVA eficaz y segura contra la enfermedad epizoótica hemorrágica del ganado vacuno (EHDV serotipo 8). Esta vacuna tendrá el potencial de proteger al ganado y otras especies susceptibles, reduciendo significativamente la mortalidad y morbilidad causadas por esta enfermedad.
+    <strong>El objetivo principal</strong> del proyecto es desarrollar una vacuna de subunidades DIVA eficaz y segura contra la enfermedad epizoótica hemorrhágica del ganado vacuno (EHDV serotipo 8). Esta vacuna tendrá el potencial de proteger al ganado y otras especies susceptibles, reduciendo significativamente la mortalidad y morbilidad causadas por esta enfermedad.
   </p>
 
   <ol>
